@@ -5,6 +5,7 @@ const NotFoundError = require('../errors/not-found-err');
 const BadRequestError = require('../errors/bad-request-err');
 const UnauthorizedError = require('../errors/unauthorized-err');
 const ConflictError = require('../errors/conflict-err');
+
 const { NODE_ENV, JWT_SECRET } = process.env;
 
 module.exports.getUsers = (req, res, next) => {
@@ -116,19 +117,22 @@ module.exports.login = (req, res, next) => {
   User.findUserByCredentials(email, password)
     .then((user) => {
       if (user) {
-        const token = jwt.sign({ _id: user._id }, NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret',
+        const token = jwt.sign(
+          { _id: user._id },
+          NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret',
           {
-          expiresIn: '7d',
-        });
-        return res.send({ 
+            expiresIn: '7d',
+          },
+        );
+        return res.send({
           user: {
             _id: user._id,
             email: user.email,
             name: user.name,
             about: user.about,
-            avatar: user.avatar
+            avatar: user.avatar,
           },
-          token
+          token,
         });
       }
       return next(new UnauthorizedError('Необходима авторизация.'));
