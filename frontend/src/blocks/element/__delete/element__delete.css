@@ -1,0 +1,14 @@
+.element__delete{
+  background-image: url(../../../images/elements/basket.svg);
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  width: 18px;
+  height: 19px;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+  top: 20px;
+  right: 20px;
+}

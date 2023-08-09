@@ -1,0 +1,9 @@
+.element__img {
+width: 100%;
+display: block;
+height: 282px;
+cursor: pointer;
+object-fit: cover;
+position: center;
+color: #ffff;
+}

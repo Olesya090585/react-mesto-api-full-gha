@@ -1,0 +1,10 @@
+.element__description {
+    max-width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+    padding: 25px 15px 31px 21px;
+
+}

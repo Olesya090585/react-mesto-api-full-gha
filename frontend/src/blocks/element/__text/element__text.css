@@ -1,0 +1,11 @@
+.element__text{
+    width: 100%;
+    color: black;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.21em;
+}

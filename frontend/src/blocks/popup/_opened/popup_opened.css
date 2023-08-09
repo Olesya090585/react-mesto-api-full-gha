@@ -1,0 +1,16 @@
+.popup_opened {
+    display: flex;
+    visibility: visible;
+    animation: popup 0.5s ease;
+    /* visibility: visible;
+    transition: 0.5s; */
+}
+
+@keyframes popup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

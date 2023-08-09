@@ -1,0 +1,28 @@
+.popup__button-close {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url(../../../images/input-button-close\ disabled.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    position: absolute;
+    top: -38px;
+    right: -38px;
+    padding: 0;
+}
+
+
+.popup__button-close:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 517px) {
+    .popup__button-close {
+        width: 20px;
+        height: 20px;
+        right: -1px;
+        background-size: contain;
+    }
+}
