@@ -19,6 +19,6 @@ react-mesto-api-full
 
 IP 51.250.103.216
 
-Frontend https:mesto.ovarnakova.nomoreparties.co
+Frontend https://mesto.ovarnakova.nomoreparties.co
 
-Backend https:api.mesto.ovarnakova.nomoreparties.co
+Backend https://api.mesto.ovarnakova.nomoreparties.co
