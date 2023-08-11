@@ -111,7 +111,7 @@ export class Api {
   }
 }
 const api = new Api({
-  baseUrl: "https://api.mesto.ovarnakova.nomoreparties.co/",
+  baseUrl: "https://api.mesto.ovarnakova.nomoreparties.co",
   headers: {
     "Content-Type": "application/json",
   },
