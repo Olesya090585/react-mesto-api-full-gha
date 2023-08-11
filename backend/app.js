@@ -14,7 +14,7 @@ const { PORT = 3000, DB_URL = 'mongodb://127.0.0.1:27017/mestodb' } = process.en
 const app = express();
 app.use(helmet());
 app.use(express.json());
-app.use(cors({ origin: 'http://localhost:3001' }));
+app.use(cors({ origin: ['http://localhost:3001', 'https://mesto.ovarnakova.nomoreparties.co'] }));
 mongoose.connect(DB_URL, {
   useNewUrlParser: true,
 });
