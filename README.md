@@ -17,8 +17,8 @@ react-mesto-api-full
 
 Ссылки на проект
 
-IP-адрес x.x.x.x
+IP 51.250.103.216
 
-Frontend https://...
+Frontend https:mesto.ovarnakova.nomoreparties.co
 
-Backend https://...
+Backend https:api.mesto.ovarnakova.nomoreparties.co
