@@ -20,13 +20,11 @@ function Register({
       ...formValue,
       [name]: value,
     });
-    console.log(formValue);
   }
 
   function handleSubmit(e) {
     e.preventDefault();
     const { email, password } = formValue;
-    console.log(email);
     auth
       .register(email, password)
       .then((data) => {
