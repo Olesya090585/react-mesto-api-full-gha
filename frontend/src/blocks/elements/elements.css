@@ -1,15 +1,19 @@
 .elements {
-    margin: 48px auto 0 auto;
-    width: calc(100% - (auto * 2));
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
-    gap: 17px;
-    justify-content: center;
-}
-
-
-@media screen and (max-width: 465px) {
+    max-width: 880px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  
+  @media screen and (max-width: 1024px) {
     .elements {
-        margin: 34px auto 0 auto;
+      max-width: calc((100vw - 320px)/(1024 - 320) * (880 - 320) + 320px);
+      padding-top: calc((100vw - 320px)/(1024 - 320) * (50 - 36) + 36px);
     }
-}
+  }
+  
+  @media screen and (max-width: 320px) {
+    .elements {
+      max-width: 320px;
+      padding: 36px 19px 0;
+    }
+  } 

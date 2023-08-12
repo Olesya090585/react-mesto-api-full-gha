@@ -112,6 +112,7 @@ export class Api {
 }
 const api = new Api({
   baseUrl: "https://api.mesto.ovarnakova.nomoreparties.co",
+  // baseUrl: 'http://localhost:3000',
   headers: {
     "Content-Type": "application/json",
   },

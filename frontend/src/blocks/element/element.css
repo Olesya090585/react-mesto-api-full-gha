@@ -1,7 +1,11 @@
 .element {
-    max-width: 100%;
+    width: 282px;
+    display: -webkit-flex;
+    display: flex;
+    justify-self: center;
+    -webkit-flex-direction: column;
+            flex-direction: column;
     border-radius: 10px;
     overflow: hidden;
-    margin: 0;
     position: relative;
-}
+  }

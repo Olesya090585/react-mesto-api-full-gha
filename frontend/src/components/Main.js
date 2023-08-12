@@ -55,6 +55,23 @@ function Main({
         />
       </section>
       <section className="elements" aria-label="галерея новых мест">
+        <ul className="elements__list">
+          {
+            cards.map((card) => (
+              <Card
+              key={card._id}
+              card={card}
+              link={card.link}
+              likes={card.likes}
+              onCardClick={onCardClick}
+              onCardLike={onCardLike}
+              onCardDelete={onCardDelete}
+              />
+            ))
+          }
+        </ul>
+      </section>
+      {/* <section className="elements" aria-label="галерея новых мест">
         {cards.map((card) => (
           <Card
             key={card._id}
@@ -66,8 +83,7 @@ function Main({
             onCardDelete={onCardDelete}
           />
         ))}
-        {/* <template id="elementTemplate" /> */}
-      </section>
+      </section> */}
     </main>
   );
 }
